@@ -5,8 +5,8 @@ from tmflow.learn.base_polynomial_layer import BasePolynomialLayer
 
 
 class KroneckerPolynomialLayer(BasePolynomialLayer):
-    def __init__(self, output_dim, order=1, initial_weights=None, use_bias=True):
-        super().__init__(output_dim, order, initial_weights, use_bias)
+    def __init__(self, output_dim, order=1, initial_weights=None, use_bias=True, w_trainable_properties=None, **kwargs):
+        super().__init__(output_dim, order, initial_weights, use_bias, w_trainable_properties, **kwargs)
 
         def f(x, y):
             return tf.vectorized_map(lambda xy: tf.tensordot(xy[0], xy[1], axes=0), elems=(x, y))
@@ -46,3 +46,7 @@ class KroneckerPolynomialLayer(BasePolynomialLayer):
             res = res + tf.matmul(x_kronecker_degree, self.kernel_weights[i])
 
         return res
+
+    def get_config(self):
+        config = super().get_config()
+        return config

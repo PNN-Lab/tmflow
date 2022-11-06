@@ -4,8 +4,8 @@ from tmflow.learn.base_polynomial_layer import BasePolynomialLayer
 
 
 class PolynomialLayer(BasePolynomialLayer):
-    def __init__(self, output_dim, order=1, initial_weights=None, use_bias=True):
-        super().__init__(output_dim, order, initial_weights, use_bias)
+    def __init__(self, output_dim, order=1, initial_weights=None, use_bias=True, w_trainable_properties=None, **kwargs):
+        super().__init__(output_dim, order, initial_weights, use_bias, w_trainable_properties, **kwargs)
 
     def build(self, input_shape):
         input_dim = input_shape[1]

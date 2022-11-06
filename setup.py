@@ -6,7 +6,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="tmflow",
-    version="0.1.0",
+    version="0.2.0",
     description="Taylor map flow is a package for a 'flowly' construction and learning "
                 "of polynomial neural networks (PNN) for time-evolving process prediction",
     long_description=long_description,
@@ -34,6 +34,7 @@ setup(
     install_requires=[
         "tensorflow>=2.8,<2.10",
         "scipy~=1.6.2",
+        "numpy~=1.20.3",
     ],
     #   $ pip install tmflow[dev]
     extras_require={
