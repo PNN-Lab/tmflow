@@ -6,7 +6,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="tmflow",
-    version="0.2.0",
+    version="0.3.0",
     description="Taylor map flow is a package for a 'flowly' construction and learning "
                 "of polynomial neural networks (PNN) for time-evolving process prediction",
     long_description=long_description,
