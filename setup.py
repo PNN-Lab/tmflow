@@ -6,7 +6,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="tmflow",
-    version="0.3.0",
+    version="0.4.0",
     description="Taylor map flow is a package for a 'flowly' construction and learning "
                 "of polynomial neural networks (PNN) for time-evolving process prediction",
     long_description=long_description,
@@ -35,14 +35,22 @@ setup(
         "tensorflow>=2.8,<2.10",
         "scipy~=1.6.2",
         "numpy~=1.20.3",
+        "sympy~=1.8",
+        "numba~=0.55.1",
     ],
-    #   $ pip install tmflow[dev]
+    #   $ pip install tmflow[examples]
     extras_require={
-        # "dev": [""],
+        "examples": [
+            "matplotlib~=3.3.4",
+            "pandas~=1.3.0",
+            "scikit-learn~=0.24.1",
+        ],
         # "test": [""],
     },
     project_urls={
         "Bug Reports": "https://github.com/PNN-Lab/tmflow/issues",
         "Source": "https://github.com/PNN-Lab/tmflow",
+        "Examples": "https://github.com/PNN-Lab/tmflow/tree/main/examples",
+        "Changelog": "https://github.com/PNN-Lab/tmflow/blob/main/CHANGELOG.md"
     },
 )
