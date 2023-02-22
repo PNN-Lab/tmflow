@@ -13,7 +13,7 @@ The proposed hybrid models provide explainable and interpretable results to leve
 
 'Construct', 'map', and 'learn' modules can be used sequentially or independently from each other.
 
-# Construct
+# Map
 Module for Taylor Mapping construction.
 It gives a tool to construct Taylor mapping for the given system of  Ordinary Differential Equations with polynomial right-hand side.
 
