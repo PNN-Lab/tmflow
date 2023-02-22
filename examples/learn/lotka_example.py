@@ -32,7 +32,6 @@ def plot_results(time_points, reference_values, predicted_values, title):
         ax.set_prop_cycle(None)
 
     fig.suptitle(title, fontsize='large')
-    plt.gcf().canvas.set_window_title(title)
     plt.show()
 
 
