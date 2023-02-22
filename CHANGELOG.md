@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.5.0 - 22.02.2023
+
+### Changed
+
+- Minimum required python version is now 3.9
+- Required library versions now have a wider version range
+
 ## v0.4.0 - 26.01.2023
 
 ### Added
